@@ -1,5 +1,6 @@
 #pragma once
 #include <QWidget>
+#include <QCompleter>
 
 namespace Ui {
     class Alta;
@@ -16,5 +17,5 @@ private:
     Ui::Alta *ui;
 
 private slots:
-    void slot_autocomplete(QString);
+    void slot_sumar();
 };
