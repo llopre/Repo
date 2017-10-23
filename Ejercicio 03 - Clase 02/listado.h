@@ -80,13 +80,13 @@ template<class T> bool Listado<T>::borrar(int i)
 
 template<class T> Listado<T> Listado<T>::operator++(int)
 {
-    int *aux;
+    T *aux;
 
     //si no hay lugar en el arreglo original
     if(libre > n/2)
     {
         //creamos un arreglo del doble del tamaño que antes
-        aux = new int[n*2];
+        aux = new T[n*2];
         n*=2;
 
         //Copiamos los elementos de v al nuevo arreglo
@@ -108,11 +108,3 @@ template<class T> Listado<T> Listado<T>::operator++(int)
     libre *= 2;
 
 }
-
-
-
-
-
-
-
-
